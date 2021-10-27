@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="ea67f32c-dba1-45b8-ba15-191d2cfac738" name="Changes" comment="" />
+=======
+    <list default="true" id="d47c21f2-8565-4c7b-a03b-701597d1ca88" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bank Transactions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bank Transactions.py" afterDir="false" />
+    </list>
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zpBVLRtjNe1VYYFekLfARpuxyX" />
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zXZw4shwYRyUSz6czCXtdnhsWk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,6 +40,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< Updated upstream
+=======
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+>>>>>>> Stashed changes
   </component>
   <component name="RunManager">
     <configuration name="Bank Transactions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -50,11 +76,19 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< Updated upstream
       <changelist id="ea67f32c-dba1-45b8-ba15-191d2cfac738" name="Changes" comment="" />
       <created>1634835176649</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634835176649</updated>
+=======
+      <changelist id="d47c21f2-8565-4c7b-a03b-701597d1ca88" name="Changes" comment="" />
+      <created>1634296627451</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634296627451</updated>
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

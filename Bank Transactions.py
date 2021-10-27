@@ -5,78 +5,35 @@
 """This program simulates an ATM utilizing If, Elif, & Else statements
 Nesting If statements and refresh our Comparison & Logical Operators"""
 
+
+print("Welcome to Cash-R-Us Bank\nLet's take a moment to set up your account.\n")
+
+command1 = input("If you would like to log into your account, press 1.\n If you would like to sign up for a new account, press2: ")
+if (command1 == "2"):
+    print ("You have chosen to set up a new Account\n")
+elif (command1 == "1"):
+    print("Please sign into your account")
+else:
+    print("That is not a valid input")
+
+
+
+
+
+
 print("Welcome to Cash-R-Us Bank\nLet's take a moment to set up your account.\n")
 
 # Set up account by asking users for their first and last names using Variables
 
-def setupAccount():
+firstName = input("\nEnter your first name, please: ")
+lastName = input("Enter your last name, please: ")
+print("\nWelcome to Cash-R-Us,", firstName, lastName + ", we will now set up a security pin on your account.\n")
 
-    firstName = input("Enter your first name, please: ")
+# Set up a PIN - Personal Identification Number
 
-    lastName = input("Enter your last name, please: ")
+pinNum = input("Please choose a four-digit Personal Identification Number: ")
 
-    print("\nWelcome to Cash-R-Us,", firstName, lastName + ", we will now set up a security pin on your account.\n")
-
-    # Set up a PIN - Personal Identification Number
-
-    pinNum = input("Please choose a four-digit Personal Identification Number: ")
-
-    print("\nThank You," + firstName + ", we see that you set your PIN to " + pinNum)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("\nThank You, " + firstName + ", we see that you set your PIN to " + pinNum)
 
 
 
@@ -94,24 +51,38 @@ def setupAccount():
 
 def makeATransaction():
     print("\nWould you like to make a transaction through our Automated Teller Machine?")
-
     #Asks if the user wants to write yes or no
     atmBoolean = input("(write yes or no): ").lower()
-
     #Checks if the user types yes
     if (atmBoolean == "yes" or "yep" or "yessir"):
+        #This part of the [rogram asks users to perform a transaction through the ATM Machine
         print("\n*****************************************\nyoyoyoyoyoyoyoyo ur coolz\n")
-        #Checks if the user types no
+        print("Please insert your ATM card in the card slot\n")
+        print("Welcome to Toys-4-U,", firstName, lastName, "\n")
+        userPIN = input("What is your 4-digit PIN?: ")
+
+        if (userPIN == pinNum):
+            print("Thank you for entering your PIN. I now have your precious data.")
+            userBalance = 6000000000000000000000
+            print("Hello,", firstName, "Your user balance is: " + str(userBalance))
+
+        else:
+            print("Silly goose, that was the wrong PIN. Do it again and I will haunt your dreams.\n Have a great day!")
+
+
     elif (atmBoolean == "no" or "nope"):
         print("\n*****************************************\nThank you, have a great day!")
+
+
         #Check if the user has written anything else besides yes or no
     else:
         print("\n*****************************************\nNot a valid term")
+
+
         #If the user types stuff other than a yes or no, then restart the program and give the user a chance to retype yes or no
         makeATransaction()
 
 
-        
 
 
 
@@ -119,143 +90,7 @@ def makeATransaction():
 
 
 
+#Calls the function makeATransaction
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#Calls the functions SetupAccount and makeATransaction
-setupAccount()
 makeATransaction()
+
