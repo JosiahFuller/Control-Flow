@@ -89,8 +89,24 @@ def makeATransaction():
 
             #Ask users what type of transaction they want, withdrawal or deposit
             typeOfTransaction = input("\n Would you like to make a withdrawal or deposit?: ").lower()
-
-
+            if (typeOfTransaction == "withdrawal"):
+                print("\nYou have chosen to withdraw cash, sucka!\n")
+                withdrawalAmount = int(input("How much money do you want?: "))
+                userBalance -= withdrawalAmount
+                print("\nYour balance is now $" + str(userBalance), ", jerk. Here's your stupid money.")
+                
+            elif (typeOfTransaction == "deposit"):
+                print("\nYou have chosen to give me money, sucker!\n")
+                depositAmount = int(input("How much money do you want to give me?: "))
+                userBalance -= depositAmount
+                print("\nYour balance is now $" + str(userBalance), ", my good sir. Thank you for feeding me.")
+                
+            elif (withdrawalAmount > userBalance):
+                print("Bruh why are you tryina steal money? You don't have that much cash fool")
+                
+                
+            else: 
+                print("Wtf man! Give me an actual number bruh")
 
         else:
             print("Silly goose, that was the wrong PIN. Do it again and I will haunt your dreams.\n Have a great day!")
@@ -103,19 +119,7 @@ def makeATransaction():
         #Check if the user has written anything else besides yes or no
     else:
         print("\n*****************************************\nNot a valid term")
-
-
-
-    if (atmBoolean == "yes"):
-        print("\n*****************************************\nyoyoyoyoyoyoyoyo ur coolz\n")
-        #Checks if the user types no
-    elif (atmBoolean == "no" or atmBoolean == "nope"):
-        print("\n*****************************************\nThank you, have a great day!")
-        #Check if the user has written anything else besides yes or no
-    else:
-        print("\n*****************************************\nNot a valid term")
-
-        #If the user types stuff other than a yes or no, then restart the program and give the user a chance to retype yes or no
+                #If the user types stuff other than a yes or no, then restart the program and give the user a chance to retype yes or no
         makeATransaction()
 
 
@@ -126,8 +130,6 @@ def makeATransaction():
 
 
 #Calls the function makeATransaction
-
-makeATransaction()
 
 
 #Calls the functions SetupAccount and makeATransaction
