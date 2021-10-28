@@ -84,11 +84,11 @@ def makeATransaction():
 
         if (userPIN == pinNum):
             print("Thank you for entering your PIN. I now have your precious data.")
-            userBalance = 6000000000000000000000
+            userBalance = 6,000,000,000,000,000,000,000
             print("Hello,", firstName, "Your user balance is: " + str(userBalance))
 
             #Ask users what type of transaction they want, withdrawal or deposit
-            typeOfTransaction = input("\n Would you like to make a withdrawal or deposit?: ").lower()
+            typeOfTransaction = input("\n Would you like to make a withdrawal,  deposit?, or check your balance?: ").lower()
             if (typeOfTransaction == "withdrawal"):
                 print("\nYou have chosen to withdraw cash, sucka!\n")
                 withdrawalAmount = int(input("How much money do you want?: "))
@@ -100,13 +100,12 @@ def makeATransaction():
                 depositAmount = int(input("How much money do you want to give me?: "))
                 userBalance -= depositAmount
                 print("\nYour balance is now $" + str(userBalance), ", my good sir. Thank you for feeding me.")
+            
+            elif (typeOfTransaction == "balance"):
+                print("Here's ur account balance, asshole:", str(userBalance))
                 
-            elif (withdrawalAmount > userBalance):
-                print("Bruh why are you tryina steal money? You don't have that much cash fool")
-                
-                
-            else: 
-                print("Wtf man! Give me an actual number bruh")
+            else:
+                print("WHYYYYY")
 
         else:
             print("Silly goose, that was the wrong PIN. Do it again and I will haunt your dreams.\n Have a great day!")
